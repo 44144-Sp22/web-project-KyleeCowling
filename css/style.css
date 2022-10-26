@@ -1,0 +1,240 @@
+/* Style Rules for body and images */
+body{
+  background-color: #fff;
+}
+
+img{
+  max-width:100%;
+  display: block;
+}
+
+.column3{
+  float: left;
+  width: 33.33%;
+}
+
+.column2{
+  float: left;
+  width: 50%;
+}
+
+main a{
+  color: #fff;
+  text-decoration: none;
+}
+
+main a:hover{
+  color: gray;
+  text-decoration: none;
+}
+
+/* Clear floats after the columns*/
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+
+/*Style rules for mobile viewport*/
+
+/*Style rule for header*/
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+header img{
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 40%;
+}
+
+/* Style rules for navigation area*/
+nav{
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li{
+  font-size: 1.5em;
+  border-top: 1px solid #e9cebf;
+}
+
+nav li a{
+  display: block;
+  color: #000;
+  padding:0.5em 1em;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: #e9cebf;
+}
+
+nav li:first-child{
+  border-top: none;
+  color: #000;
+}
+
+/*Show mobile class, hid tablet desktop class*/
+  .mobile{
+  display: block;
+}
+
+  .tablet-desktop{
+  display: none;
+}
+
+/* Style rules for main content*/
+main{
+  background-color: #e9cebf;
+  padding: 5%;
+  margin: 0;
+  font-size: 1.15em;
+  text-align: center;
+}
+
+.external-link{
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer{
+  background-color:#EADDD7;
+  padding: 10px;
+}
+
+footer p{
+  font-size: 0.75em;
+  text-align: center;
+  color: #000;
+  padding: 0 1em;
+}
+
+footer p a{
+  color: #000;
+  text-decoration: none;
+}
+
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px), print{
+
+/*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+  .tablet-desktop {
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
+/* Tablet Viewport: Style rule for header */
+header{
+  position: static;
+  padding-bottom: 2%
+}
+
+header img{
+  width: 40%;
+}
+
+/*Tablet Viewport: Style rules for nav area*/
+nav li{
+  border-top: none;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a{
+  padding: 0.1em 0.75em;
+}
+
+/* Tablet Viewport: Style rules for main content area */
+main ul{
+  margin: 0 0 4% 10%;
+}
+
+.contactPic{
+  width: 60%;
+}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print{
+
+/* Desktop Viewport: Style rule for header */
+  header {
+  width: 25%;
+  float: left;
+  padding-bottom: 0;
+}
+
+header img{
+  width: 100%;
+}
+
+/* Desktop Viewport: Style rules for nav area */
+nav{
+  float: right;
+  width: 70%;
+  margin: 4em 1em 0 0;
+}
+
+nav li{
+  text-align: right;
+}
+
+nav li{
+  border: none;
+}
+
+nav li a{
+  padding: 0.5em 1em;
+}
+
+nav li a:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+/*Desktop Viewport: Style Rules for main content */
+main{
+  clear: left;
+}
+
+main h1{
+  font-size: 1.8em;
+    }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px){
+#container{
+  width: 1920px;
+  margin: 0 auto;
+  }
+}
+
+/* Media Query for Print */
+@media print{
+body{
+  background-color: #fff;
+  color: #000;
+  }
+}
