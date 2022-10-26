@@ -19,7 +19,7 @@ img{
 }
 
 main a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -170,9 +170,6 @@ main ul{
   margin: 0 0 4% 10%;
 }
 
-.contactPic{
-  width: 60%;
-}
 }
 
 /* Media Query for Desktop Viewport */
